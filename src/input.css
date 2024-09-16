@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Roboto", system-ui;;
+}
+
+.btn-primary {
+  @apply bg-top_Header_color p-3 font-medium w-fit rounded-md text-white px-8 text-sm hover:bg-hover_color duration-200 ease-in-out
+}
+.container-fluid
+{
+  width: 85% ;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid
+  {
+    width: 100% ;
+    margin: auto;
+  }
+}
+
+ /* Hide and show the mobile menu with animation */
+ #mobile-menu {
+    width: 0;
+  }
+  #mobile-menu.open {
+    width: 50%;
+  }
+  
+
+  /* ==== banner section ===  */
+  .banner_bg
+  {
+    background: url('./images/header-2s.jpg') center center no-repeat;
+    background-size: cover;
+  }
+/* ==== testimonail section ===  */
+
+    .testimonial-item {
+        min-width: 100%; /* Default to mobile full width */
+    }
+
+    /* For buttons hover state */
+    #prevBtn:hover, #nextBtn:hover {
+        background-color: #4B5563; /* Slightly darker gray */
+    }
+
+

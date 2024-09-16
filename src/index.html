@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./input.css" />
+  <link rel="stylesheet" href="./output.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- ==== Top header ===  -->
+  <section class="bg-top_Header_color">
+    <div class="container mx-auto px-3 text-white hidden xl:flex items-center justify-between gap-4 py-2">
+      <div class="flex gap-2 items-center">
+        <span class="text-lg"><i class="fa-regular fa-envelope"></i></span>
+        <span class="text-[11px]">Admissions@oxfordlanguagecentre.com</span>
+      </div>
+
+      <div class="flex gap-2 items-center">
+        <span class="text-lg"><i class="fa-brands fa-whatsapp"></i></span>
+        <span class="text-[11px]">00212 6 00600751</span>
+      </div>
+
+      <div class="flex gap-2 items-center">
+        <span class="text-lg"><i class="fa-solid fa-phone"></i></span>
+        <span class="text-[11px]">00212 6 00600751</span>
+      </div>
+
+      <div class="flex gap-2 items-center">
+        <span class="text-lg"><i class="fa-regular fa-envelope"></i></span>
+        <span class="text-[11px]">Baku@oxfordlanguagecentre.com</span>
+      </div>
+
+      <div class="flex gap-2 items-center">
+        <span class="text-lg"><i class="fa-brands fa-whatsapp"></i></span>
+        <span class="text-[11px]">0099 45 54 136 866</span>
+      </div>
+
+      <div class="flex gap-2 items-center">
+        <span class="text-lg"><i class="fa-solid fa-phone"></i></span>
+        <span class="text-[11px]">0099 45 54 136 866</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== navbar section ====  -->
+  <section class="py-2">
+    <div>
+      <!-- Navbar -->
+      <nav id="navbar" class="container mx-auto px-4 flex justify-between items-center z-50 bg-white">
+        <!-- Logo -->
+        <div class="text-white text-2xl font-bold">
+          <a href="#">
+            <img class="w-32 md:w-36" src="./images/OLC-logo-s.png" alt="" />
+          </a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="hidden xl:flex space-x-8 items-center">
+          <li class="group relative py-2 z-30">
+            <a href="#"
+              class="overflow-hidden flex items-center gap-2 font-semibold py-1 px-2 hover:text-text_hover_color duration-100 ease-in-out text-sm">English
+              Courses
+              <span><i class="fa-solid fa-caret-down"></i></span>
+            </a>
+            <!-- Dropdown -->
+            <ul
+              class="absolute left-0 top-10 hidden group-hover:block space-y-2 bg-white rounded-bl-md rounded-br-md shadow-lg overflow-hidden w-40 -z-10 border-t-2 border-t-border_bottom_color text-sm">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-top_Header_color hover:text-white">General English</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-top_Header_color hover:text-white">IELTS Preparation</a>
+              </li>
+              <li></li>
+              <a href="#" class="block px-4 py-2 hover:bg-top_Header_color hover:text-white">PSI SfE Preparation</a>
+          </li>
+        </ul>
+        </li>
+
+        <li class="group relative py-2 z-30">
+          <a href="./British-Diplomas/"
+            class="overflow-hidden font-semibold text-sm py-1 px-2 hover:text-text_hover_color duration-100 ease-in-out">British
+            Diplomas
+          </a>
+        </li>
+
+        <li class="group relative py-2 z-30">
+          <a href="#"
+            class="overflow-hidden font-semibold text-sm hover:text-text_hover_color duration-100 ease-in-out py-1 px-2">Our
+            Services
+          </a>
+        </li>
+
+        <li class="group relative py-2 z-30">
+          <a href="#"
+            class="overflow-hidden font-semibold text-sm hover:text-text_hover_color duration-100 ease-in-out py-1 px-2">PSI
+            Test at OLC
+          </a>
+        </li>
+        <li class="group relative py-2 z-30">
+          <a href="#"
+            class="overflow-hidden flex items-center gap-2 font-semibold text-sm py-1 px-2 hover:text-text_hover_color duration-100 ease-in-out">About
+            OLC
+            <span><i class="fa-solid fa-caret-down"></i></span>
+          </a>
+          <!-- Dropdown -->
+          <ul
+            class="absolute left-0 top-10 hidden space-y-2 group-hover:block bg-white rounded-bl-md rounded-br-md shadow-lg overflow-hidden w-40 -z-10 border-t-2 border-t-border_bottom_color text-sm">
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-top_Header_color hover:text-white">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-top_Header_color hover:text-white">Our Accreditation</a>
+            </li>
+            <li></li>
+            <a href="#" class="block px-4 py-2 hover:bg-top_Header_color hover:text-white">OLC Gallery</a>
+        </li>
+        </ul>
+        </li>
+        <li class="group relative py-2">
+          <a href="#"
+            class="overflow-hidden font-medium hover:text-text_hover_color duration-100 ease-in-out py-1 px-2">Blog
+          </a>
+        </li>
+        </ul>
+
+        <!-- Get in Touch Button -->
+        <button class="hidden xl:block bg-top_Header_color text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-hover_color duration-200 ease-in-out">
+          Get in Touch
+        </button>
+
+        <!-- Mobile Menu Icon -->
+        <div
+          class="xl:hidden text-2xl border border-border_bottom_color border-opacity-75 p-2 py-0 rounded-md cursor-pointer"
+          id="menu-toggle">
+          &#9776;
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu"
+        class="fixed top-0 right-0 h-full w-0 bg-white overflow-hidden transition-all duration-300 z-50">
+        <div class="p-4 flex justify-end">
+          <button id="close-menu"
+            class="text-3xl border border-border_bottom_color p-2 py-0 cursor-pointer rounded-md border-opacity-75">
+            &times;
+          </button>
+        </div>
+        <ul class="space-y-5 text-center mt-10 z-50">
+          <!-- Mobile Dropdown Menu 1 -->
+          <li>
+            <button id="mobile-menu-1"
+              class="w-full text-left block px-4 py-2 text-sm font-semibold hover:bg-top_Header_color hover:text-white">
+              English Courses
+              <span><i class="fa-solid fa-caret-down"></i></span>
+            </button>
+            <ul id="mobile-dropdown-1" class="hidden text-left bg-gray-50 py-1">
+              <li>
+                <a href="#" class="block py-2 hover:bg-top_Header_color pl-2 text-sm hover:text-white">General
+                  English</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 hover:bg-top_Header_color pl-2 text-sm hover:text-white">IELTS
+                  Preparation</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 hover:bg-top_Header_color pl-2 text-sm hover:text-white">PSI SfE
+                  Preparation</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <button id="mobile-menu-1"
+              class="w-full text-left block px-4 py-2 text-sm font-semibold hover:bg-top_Header_color hover:text-white">
+              British Diplomas
+            </button>
+          </li>
+          <li>
+            <button id="mobile-menu-1"
+              class="w-full text-left block px-4 py-2 text-sm font-semibold hover:bg-top_Header_color hover:text-white">
+              Our Services
+            </button>
+          </li>
+          <li>
+            <button id="mobile-menu-1"
+              class="w-full text-left block px-4 py-2 text-sm font-semibold hover:bg-top_Header_color hover:text-white">
+              PSI Test at OLC
+            </button>
+          </li>
+          <div>
+            <button id="mobile-menu-2"
+              class="w-full text-left block px-4 py-2 text-sm font-semibold hover:bg-top_Header_color hover:text-white">
+              About OLC <span><i class="fa-solid fa-caret-down"></i></span>
+            </button>
+            <div id="mobile-dropdown-2" class="hidden text-left">
+              <a href="#" class="block py-2 hover:bg-top_Header_color pl-4 text-sm hover:text-white">About Us</a>
+              <a href="#" class="block py-2 hover:bg-top_Header_color pl-4 text-sm hover:text-white">Our
+                Accreditation</a>
+              <a href="#" class="block py-2 hover:bg-top_Header_color pl-4 text-sm hover:text-white">OLC Gallery</a>
+            </div>
+          </div>
+          <li>
+            <button id="mobile-menu-1"
+              class="w-full text-left block px-4 py-2 text-sm font-semibold hover:bg-top_Header_color hover:text-white">
+              Blog
+            </button>
+          </li>
+          <li>
+            <!-- Get in Touch Button -->
+            <button class="hidden md:block bg-top_Header_color text-white px-6 py-2 rounded-lg">
+              Get in Touch
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Hero section =====  -->
+  <section class="banner_bg h-screen">
+    <div
+      class="container mx-auto px-3 flex flex-col md:flex-col xl:flex-row gap-10 justify-around items-center h-screen">
+
+      <div
+        class="backdrop-blur-lg bg-top_Header_color bg-opacity-35 p-8 rounded-md text-center w-full md:w-3/4 xl:w-2/5 flex flex-col gap-4 shadow-lg mt-20 md:mt-0">
+        <img src="./images/PSI_Authorized_Test_Center_Badge.png" class="mx-auto " alt="PSI">
+        <h1 class="text-3xl md:text-5xl text-white font-semibold">PSI Authorised Test Centre</h1>
+        <p class="text-white text-lg font-normal">Fully Accredited to ensure we provide the highest possible standards
+          in testing</p>
+        <button
+          class="text-white bg-top_Header_color p-4 font-semibold rounded-xl hover:bg-hover_color duration-200 ease-in-out">Book
+          your test now</button>
+        <div class="flex flex-col md:flex-row items-center justify-between gap-2 md:gap-3 text-sm mt-3">
+          <div class="text-white font-normal"> <span><i class="fa-regular fa-heart"></i></span> Highly Trusted </div>
+          <div class="text-white font-normal"> <span><i class="fa-solid fa-location-dot"></i></span> Certified Centres
+            for SELT Exam </div>
+        </div>
+      </div>
+      <div>
+        <button
+          class="bg-top_Header_color p-5 rounded-xl px-10 text-white w-full text-4xl flex gap-5 hover:bg-hover_color duration-200 ease-in-out">Apply
+          now <span><i class="fa-solid fa-user-graduate"></i></span> </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== about section ====  -->
+  <section class="py-16">
+    <div class=" container mx-auto px-3">
+      <div
+        class=" md:w-[85%] mx-auto flex flex-col md:flex-col xl:flex-row items-center justify-center gap-10 md:gap-20">
+        <img src="./images/pictue-1.png" class="rounded-3xl shadow-xl object-cover w-full" alt="about">
+        <div class="flex flex-col gap-7">
+          <h2 class="text-text_title_color text-base font-semibold">About OLC</h2>
+          <h1 class="text-3xl md:text-4xl text-text_heading_color font-semibold">We're Oxford Language Centre</h1>
+          <div class=" h-1 rounded-sm bg-top_Header_color w-32"></div>
+          <p class="text-black text-base font-semibold">Oxford Language Center is an education and visa advisor agency
+            that specializes in providing superior support to people who want to travel abroad or study at one of the
+            world’s most prestigious universities.</p>
+          <div class="flex flex-col gap-3">
+            <div class="flex gap-3"> <span><i class="fa-solid fa-angle-right"></i></span> English language courses
+            </div>
+            <div class="flex gap-3"> <span><i class="fa-solid fa-angle-right"></i></span> English Language Tests and
+              Preparations </div>
+            <div class="flex gap-3"> <span><i class="fa-solid fa-angle-right"></i></span> Student Visa Assistance </div>
+            <div class="flex gap-3"> <span><i class="fa-solid fa-angle-right"></i></span> British Diplomas and Degrees
+            </div>
+            <div class="flex gap-3"> <span><i class="fa-solid fa-angle-right"></i></span> Training courses </div>
+          </div>
+          <button class="text-left btn-primary ">Know More <i class="fa-solid fa-angle-right"></i> </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Frequently Asked Questions ====  -->
+  <section class="py-10">
+    <div class="container-fluid mx-auto px-3">
+      <div class=" flex flex-col justify-center items-center gap-4 md:gap-6">
+        <h2 class="text-text_title_color font-semibold text-base">Psi Exams With OLC</h2>
+        <h1 class="text-3xl md:text-4xl font-semibold text-text_heading_color">Frequently Asked Questions</h1>
+        <div class=" h-1 rounded-sm bg-top_Header_color w-32 mx-auto"></div>
+        <p class="text-base text-black text-center md:w-2/3 mx-auto">If you want more specific advice, one of our
+          Education Consultants will be happy to help you. Email us Admissions@Oxfordlanguagecentre.com</p>
+        <button class="btn-primary">Read More About the Test</button>
+      </div>
+      <!-- ==== question ===  -->
+      <div class="mt-10 md:mt-14">
+        <div id="faqContainer" class="space-y-6 md:w-3/4 mx-auto"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== selt exam ===  -->
+  <section class="py-10 bg-top_Header_color">
+    <div class="container mx-auto px-3 ">
+      <div class="md:w-2/3 mx-auto flex flex-col justify-center items-center gap-4">
+        <span class="text-white text-4xl"><i class="fa-solid fa-graduation-cap"></i></span>
+        <h1 class="text-3xl md:text-5xl font-semibold text-white">SELT EXAM</h1>
+        <p class="text-white text-center">At Oxford Language Centre, we prepare you to launch your career by providing a
+          supportive, creative, and professional environment from which to learn practical skills and build a network of
+          industry contacts.</p>
+        <button class=" p-3 rounded-md text-white font-medium px-10 text-base bg-button_secondary">Book Your Test
+          Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== services section ===  -->
+  <section class="py-10">
+    <div class="container mx-auto px-3">
+      <div class="md:w-[90%] mx-auto">
+        <div class="md:w-2/3 mx-auto flex flex-col items-center justify-center gap-4 md:gap-6">
+          <h1 class="text-3xl md:text-4xl font-semibold text-text_heading_color"> Our Services</h1>
+          <div class=" h-1 rounded-sm bg-top_Header_color w-32 mx-auto"></div>
+          <p class="text-center text-base">we offer our students a full support platform to help them with all aspects
+            of
+            their study preparations. Our experienced UK representatives specialise in lots of different areas and so we
+            are confident that we can provide our students with exceptional guidance on their study plans including</p>
+
+        </div>
+        <!-- === service list ===  -->
+        <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-10 text-center mt-10">
+          <!-- list 1 -->
+          <div>
+            <a href="#"
+              class="border-2 border-dashed p-6 border-gray-500 rounded-md flex items-center justify-center flex-col gap-4">
+              <span class="text-4xl bg-top_Header_color p-4 rounded-full flex justify-center items-center text-white"><i
+                  class="fa-solid fa-book"></i></span>
+              <h2 class="text-text_title_color text-xl font-semibold">Application Support services</h2>
+              <p class="text-center text-base text-text_title_color">We offer a full application support service to all
+                EU
+                and international students.</p>
+            </a>
+          </div>
+          <!-- list 2 -->
+          <div>
+            <a href="#"
+              class="border-2 border-dashed p-6 border-gray-500 rounded-md flex items-center justify-center flex-col gap-4">
+              <span class="text-4xl bg-top_Header_color p-4 rounded-full flex justify-center items-center text-white"><i
+                  class="fa-solid fa-book"></i></span>
+              <h2 class="text-text_title_color text-xl font-semibold">Application Support services</h2>
+              <p class="text-center text-base text-text_title_color">We offer a full application support service to all
+                EU
+                and international students.</p>
+            </a>
+          </div>
+          <!-- list 3  -->
+          <div>
+            <a href="#"
+              class="border-2 border-dashed p-6 border-gray-500 rounded-md flex items-center justify-center flex-col gap-4">
+              <span class="text-4xl bg-top_Header_color p-4 rounded-full flex justify-center items-center text-white"><i
+                  class="fa-solid fa-book"></i></span>
+              <h2 class="text-text_title_color text-xl font-semibold">Application Support services</h2>
+              <p class="text-center text-base text-text_title_color">We offer a full application support service to all
+                EU
+                and international students.</p>
+            </a>
+          </div>
+          <!-- list 4  -->
+          <div>
+            <a href="#"
+              class="border-2 border-dashed p-6 border-gray-500 rounded-md flex items-center justify-center flex-col gap-4">
+              <span class="text-4xl bg-top_Header_color p-4 rounded-full flex justify-center items-center text-white"><i
+                  class="fa-solid fa-book"></i></span>
+              <h2 class="text-text_title_color text-xl font-semibold">Application Support services</h2>
+              <p class="text-center text-base text-text_title_color">We offer a full application support service to all
+                EU
+                and international students.</p>
+            </a>
+          </div>
+
+          <!-- list 5  -->
+          <div>
+            <a href="#"
+              class="border-2 border-dashed p-6 border-gray-500 rounded-md flex items-center justify-center flex-col gap-4">
+              <span class="text-4xl bg-top_Header_color p-4 rounded-full flex justify-center items-center text-white"><i
+                  class="fa-solid fa-book"></i></span>
+              <h2 class="text-text_title_color text-xl font-semibold">Application Support services</h2>
+              <p class="text-center text-base text-text_title_color">We offer a full application support service to all
+                EU
+                and international students.</p>
+            </a>
+          </div>
+
+          <!-- list 6  -->
+          <div>
+            <a href="#"
+              class="border-2 border-dashed p-6 border-gray-500 rounded-md flex items-center justify-center flex-col gap-4">
+              <span class="text-4xl bg-top_Header_color p-4 rounded-full flex justify-center items-center text-white"><i
+                  class="fa-solid fa-book"></i></span>
+              <h2 class="text-text_title_color text-xl font-semibold">Application Support services</h2>
+              <p class="text-center text-base text-text_title_color">We offer a full application support service to all
+                EU
+                and international students.</p>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== English Language Courses ===  -->
+  <section class="py-10">
+    <div class="container mx-auto px-3 py-10">
+      <div class="flex items-center justify-center flex-col gap-4 md:gap-5">
+        <h1 class="text-3xl md:text-4xl font-semibold text-text_heading_color text-center">English Language Courses</h1>
+        <div class=" h-1 rounded-sm bg-top_Header_color w-32 mx-auto"></div>
+      </div>
+      <!-- === courses ==  -->
+      <div class="mt-10 md:w-3/5 mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <div class="relative">
+            <img src="./images/english course/course1.jpg"
+              class="from-slate-400 h-72 object-cover rounded-tl-md rounded-tr-md" alt="english course">
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-300 opacity-75 to-50%"></div>
+          </div>
+          <h1 class="text-xl text-center font-semibold mt-2">General English</h1>
+        </div>
+
+        <div>
+          <div class="relative">
+            <img src="./images/english course/course1.jpg"
+              class="from-slate-400 h-72 object-cover rounded-tl-md rounded-tr-md" alt="english course">
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-300 opacity-75 to-50%"></div>
+          </div>
+          <h1 class="text-xl text-center font-semibold mt-2">General English</h1>
+        </div>
+
+        <div>
+          <div class="relative">
+            <img src="./images/english course/course1.jpg"
+              class="from-slate-400 h-72 object-cover rounded-tl-md rounded-tr-md" alt="english course">
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-300 opacity-75 to-50%"></div>
+          </div>
+          <h1 class="text-xl text-center font-semibold mt-2">General English</h1>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== Testimonail =====  -->
+  <section class="py-10">
+    <div class="container mx-auto px-3 py-10">
+      <div class="md:w-1/2 mx-auto flex flex-col items-center justify-center gap-3">
+        <h4 class="text-base text-text_hover_color">Testimonial</h4>
+        <h1 class="text-3xl md:text-4xl font-semibold text-text_heading_color">What Our Students Said</h1>
+        <div class=" h-1 rounded-sm bg-top_Header_color w-32 mx-auto"></div>
+        <p class="text-center">Students at the heart of everything we do, this is what they say about us </p>
+      </div>
+
+
+
+      <!-- === testimonial list ===  -->
+
+      <div class="testimonial-container mx-auto w-full p-8">
+        <div class="relative overflow-hidden">
+          <div id="testimonial-slider" class="flex transition-transform duration-700 ease-in-out">
+            <!-- Testimonial items will be dynamically inserted from the JavaScript file -->
+          </div>
+
+          <!-- Next and Previous buttons -->
+          <button id="prevBtn"
+            class="absolute top-1/2 left-2 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full">❮</button>
+          <button id="nextBtn"
+            class="absolute top-1/2 right-2 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full">❯</button>
+        </div>
+      </div>
+
+
+
+      <!-- ==== end testimonail section ===  -->
+
+
+
+    </div>
+  </section>
+
+  <!-- ====Our Accreditations =  -->
+  <!-- <section class="py-10">
+      <div class="container mx-auto px-3">
+        <h1 class="text-3xl md:text-4xl text-text_heading_color font-semibold text-center">Our Accreditations</h1>
+        <div class=" h-1 rounded-sm bg-top_Header_color w-32 mx-auto mt-3"></div>
+
+
+
+
+      </div>
+     </section> -->
+
+
+  <!-- ===== Get first Your online consultation =====  -->
+  <section class="py-10">
+    <div class="container mx-auto px-3 py-10">
+      <h1 class="text-3xl md:text-4xl text-text_heading_color font-semibold text-center">Get first Your online
+        consultation</h1>
+      <div class=" h-1 rounded-sm bg-top_Header_color w-32 mx-auto mt-3"></div>
+      <!-- === form ==  -->
+      <div class="mt-10 md:w-1/2 mx-auto">
+        <form action="#" class="flex flex-col gap-6">
+          <div class="flex flex-col gap-1.5">
+            <label class="font-medium text-sm" for="name">Full Name</label>
+            <input type="text"
+              class="p-2 w-full border border-border_input_color outline-none border-opacity-75 rounded-md" id="name"
+              placeholder="Full Name" required>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label class="font-medium text-sm" for="email">Email</label>
+            <input class="p-2 w-full border border-border_input_color outline-none border-opacity-75 rounded-md"
+              type="email" placeholder="Email" required>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-1.5">
+              <label class="font-medium text-sm" for="phone">Please Select Date For A call </label>
+              <input class="p-2 w-full border border-border_input_color outline-none border-opacity-75 rounded-md"
+                type="number" placeholder="Phone Number" required>
+            </div>
+            <div>
+              <div class="flex flex-col gap-1.5">
+                <label class="font-medium text-sm" for="information">Request Information About Our</label>
+                <div class="flex gap-4">
+                  <div>
+                    <input type="checkbox">
+                    <span>Baku Center</span>
+                  </div>
+                  <div>
+                    <input type="checkbox">
+                    <span>Marrakesh Center</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <label class="font-medium text-sm" for="">Please Select Date For A call </label>
+              <input class="p-2 w-full border border-border_input_color outline-none border-opacity-75 rounded-md"
+                type="date" placeholder="Please select date for a call">
+            </div>
+          </div>
+          <button type="submit" class="btn-primary mx-auto">Request A call From our Team</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== News & Events ====  -->
+  <section class="py-10">
+    <div class="container mx-auto px-3 py-10">
+      <h1 class="text-3xl md:text-4xl text-text_heading_color font-semibold text-center">News & Events</h1>
+      <div class=" h-1 rounded-sm bg-top_Header_color w-32 mx-auto mt-3"></div>
+      <!-- ==== event ===  -->
+      <div class="md:w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-10 mt-10">
+        <!-- list 1  -->
+        <a href="#" class=" shadow-xl py-3 flex flex-col gap-5">
+          <div class="relative p-0">
+            <img src="./images/english course/course1.jpg"
+              class="from-slate-400 h-72 object-cover rounded-tl-md rounded-tr-md" alt="english course">
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-300 opacity-75 to-50%"></div>
+          </div>
+          <div class="p-4 flex flex-col gap-5">
+            <h1 class="text-xl font-semibold text-text_heading_color">Achieve your learning goals with Oxford Language
+              Centre</h1>
+            <p class="font-normal">Learning English language with Oxford Language Centre, we will push you much further
+              than you ever thought
+              possible. We will give you a sense of</p>
+            <button href="#" class="block text-text_title_color uppercase text-sm font-medium text-start">READ More
+              <span><i class="fa-solid fa-arrow-right"></i></span> </button>
+          </div>
+
+        </a>
+
+        <!-- list 1  -->
+        <a href="#" class=" shadow-xl py-3 flex flex-col gap-5">
+          <div class="relative p-0">
+            <img src="./images/picture_2.jpg" class="from-slate-400 h-72 object-cover rounded-tl-md rounded-tr-md"
+              alt="english course">
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-300 opacity-75 to-50%"></div>
+          </div>
+          <div class="p-4 flex flex-col gap-5">
+            <h1 class="text-xl font-semibold text-text_heading_color">Achieve your learning goals with Oxford Language
+              Centre</h1>
+            <p class="font-normal">Learning English language with Oxford Language Centre, we will push you much further
+              than you ever thought
+              possible. We will give you a sense of</p>
+            <button href="#" class="block text-text_title_color uppercase text-sm font-medium text-start">READ More
+              <span><i class="fa-solid fa-arrow-right"></i></span> </button>
+          </div>
+
+        </a>
+
+        <!-- list 1  -->
+        <a href="#" class=" shadow-xl py-3 flex flex-col gap-5">
+          <div class="relative p-0">
+            <img src="./images/picture_3.jpg" class="from-slate-400 h-72 object-cover rounded-tl-md rounded-tr-md"
+              alt="english course">
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-300 opacity-75 to-50%"></div>
+          </div>
+          <div class="p-4 flex flex-col gap-5">
+            <h1 class="text-xl font-semibold text-text_heading_color">Achieve your learning goals with Oxford Language
+              Centre</h1>
+            <p class="font-normal">Learning English language with Oxford Language Centre, we will push you much further
+              than you ever thought
+              possible. We will give you a sense of</p>
+            <button href="#" class="block text-text_title_color uppercase text-sm font-medium text-start">READ More
+              <span><i class="fa-solid fa-arrow-right"></i></span> </button>
+          </div>
+
+        </a>
+
+        <!-- list 1  -->
+        <a href="#" class=" shadow-xl py-3 flex flex-col gap-5">
+          <div class="relative p-0">
+            <img src="./images/picture_4.jpg" class="from-slate-400 h-72 object-cover rounded-tl-md rounded-tr-md"
+              alt="english course">
+            <div class="absolute inset-0 bg-gradient-to-t from-blue-300 opacity-75 to-50%"></div>
+          </div>
+          <div class="p-4 flex flex-col gap-5">
+            <h1 class="text-xl font-semibold text-text_heading_color">Achieve your learning goals with Oxford Language
+              Centre</h1>
+            <p class="font-normal">Learning English language with Oxford Language Centre, we will push you much further
+              than you ever thought
+              possible. We will give you a sense of</p>
+            <button href="#" class="block text-text_title_color uppercase text-sm font-medium text-start">READ More
+              <span><i class="fa-solid fa-arrow-right"></i></span> </button>
+          </div>
+
+        </a>
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- === contact section ====  -->
+  <section class="py-10">
+    <div class="container mx-auto px-3 py-10">
+     <div class="md:w-[90%] mx-auto">
+      <div class="flex flex-col items-center justify-center gap-3 md:w-1/2 mx-auto">
+        <h1 class="text-3xl md:text-4xl font-semibold text-text_heading_color text-center">Feel Free To Contact And
+          Reach Us !</h1>
+        <div class=" h-1 rounded-sm bg-top_Header_color w-32 mx-auto mt-3"></div>
+        <p class="text-center">Contact us Now and know more about our courses, the psi test, talk to one of our team and
+          draw the path for your future.</p>
+      </div>
+      <!-- ==== contact ====  -->
+      <div class=" grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-10 mt-10">
+        <div class="flex flex-col justify-center gap-9">
+          <h1 class="text-2xl md:text-3xl text-text_heading_color font-semibold">Marrakech Office</h1>
+          <div class="w-full">
+            <iframe class="max-w-full md:h-40"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13587.402504069905!2d-8.016541!3d31.63794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafefd21aa48eeb%3A0xf9b094998bd7ac8e!2sOxford%20Language%20Centre%2C%20OLC%20Marrakesh!5e0!3m2!1sen!2sus!4v1726517133917!5m2!1sen!2sus"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="flex gap-4 items-center justify-start">
+            <span
+              class="bg-top_Header_color text-white p-5 rounded-full text-xl flex items-center justify-center w-fit"><i
+                class="fa-solid fa-phone"></i></span>
+            <div class="flex flex-col gap-1">
+              <h5 class="text-text_title_color font-semibold text-base">Phone Number : :</h5>
+              <p class="text-sm font-medium">WhatsApp: +212 600600751</p>
+              <span class="text-sm font-medium">Tel: +212600600751</span>
+            </div>
+          </div>
+
+          <div class="flex gap-4 items-center justify-start">
+            <span
+              class="bg-top_Header_color text-white p-5 rounded-full text-xl flex items-center justify-center w-fit"><i
+                class="fa-solid fa-location-arrow"></i></span>
+            <div class="flex flex-col gap-1">
+              <h5 class="text-text_title_color font-semibold text-base">Address :</h5>
+              <span class="text-sm font-medium">Etage 2 appt 8, 119 Rue Mohammed el</span>
+              <span class="text-sm font-medium">Beqal, Marrakesh 40000, Morocco</span>
+            </div>
+          </div>
+
+
+          <div class="flex gap-4 items-center justify-start">
+            <span
+              class="bg-top_Header_color text-white p-5 rounded-full text-xl flex items-center justify-center w-fit"><i
+                class="fa-solid fa-envelope-open-text"></i></span>
+            <div class="flex flex-col gap-1">
+              <h5 class="text-text_title_color font-semibold text-base">Email Address :</h5>
+              <span class="text-sm font-medium">Admissions@oxfordlanguagecentre.com</span>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="flex flex-col justify-center gap-9">
+          <h1 class="text-2xl md:text-3xl text-text_heading_color font-semibold">Marrakech Office</h1>
+          <div>
+            <iframe class="max-w-full md:h-40"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13587.402504069905!2d-8.016541!3d31.63794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafefd21aa48eeb%3A0xf9b094998bd7ac8e!2sOxford%20Language%20Centre%2C%20OLC%20Marrakesh!5e0!3m2!1sen!2sus!4v1726517133917!5m2!1sen!2sus"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="flex gap-4 items-center justify-start">
+            <span
+              class="bg-top_Header_color text-white p-5 rounded-full text-xl flex items-center justify-center w-fit"><i
+                class="fa-solid fa-phone"></i></span>
+            <div class="flex flex-col gap-1">
+              <h5 class="text-text_title_color font-semibold text-base">Phone Number : :</h5>
+              <p class="text-sm font-medium">WhatsApp: +212 600600751</p>
+              <span class="text-sm font-medium">Tel: +212600600751</span>
+            </div>
+          </div>
+
+          <div class="flex gap-4 items-center justify-start">
+            <span
+              class="bg-top_Header_color text-white p-5 rounded-full text-xl flex items-center justify-center w-fit"><i
+                class="fa-solid fa-location-arrow"></i></span>
+            <div class="flex flex-col gap-1">
+              <h5 class="text-text_title_color font-semibold text-base">Address :</h5>
+              <span class="text-sm font-medium">Etage 2 appt 8, 119 Rue Mohammed el</span>
+              <span class="text-sm font-medium">Beqal, Marrakesh 40000, Morocco</span>
+            </div>
+          </div>
+
+
+          <div class="flex gap-4 items-center justify-start">
+            <span
+              class="bg-top_Header_color text-white p-5 rounded-full text-xl flex items-center justify-center w-fit"><i
+                class="fa-solid fa-envelope-open-text"></i></span>
+            <div class="flex flex-col gap-1">
+              <h5 class="text-text_title_color font-semibold text-base">Email Address :</h5>
+              <span class="text-sm font-medium">Admissions@oxfordlanguagecentre.com</span>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+     </div>
+    </div>
+  </section>
+
+
+  <!-- === footer section ====  -->
+  <section class="py-10 bg-top_Header_color text-white">
+    <div class="container mx-auto px-3">
+
+<div class="md:w-[90%] mx-auto">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-14 text-gray-200">
+    <div>
+      <h1 class="text-xl md:text-2xl font-semibold mb-3">ABOUT OLC</h1>
+      <ul class="flex flex-col gap-3 text-base font-normal">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Accreditation</a></li>
+        <li><a href="#">OLC Gallery</a></li>
+        <li><a href="#">News & Events</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h1 class="text-xl md:text-2xl font-semibold mb-3">OUR COURSES</h1>
+      <ul class="flex flex-col gap-3 text-base font-normal">
+        <li><a href="#">English Courses</a></li>
+        <li><a href="#">British Diplomas</a></li>
+        <li><a href="#">PSI TEST AT OLC</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h1 class="text-xl md:text-2xl font-semibold mb-3">HELP CENTER</h1>
+      <ul class="flex flex-col gap-3 text-base font-normal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Cookies Policy</a></li>
+      </ul>
+    </div>
+
+
+    <div class="flex flex-col items-start gap-3">
+      <span>Subscribe to our newsletter and stay informed.</span>
+      <input type="email" class="rounded-xl bg-white p-2 w-full text-sm" placeholder="Email">
+      <button class="bg-white text-text_title_color text-sm font-semibold p-2 px-5 rounded-xl">subscribe</button>
+    </div>
+  </div>
+
+  <p class="text-center text-base text-gray-200 mt-10">Copyright ©2024 All rights reserved | Oxford Language Centre
+  </p>
+</div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ======= script file ===  -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
