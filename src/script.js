@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", () => {
     testimonialContainer.innerHTML = testimonialsToShow
       .map(
         (testimonial, index) => `
-      <div class="testimonial bg-white p-6 rounded-lg shadow-lg w-full transform transition-all duration-500 text-center min-h-fit w-full ${
+      <div class="testimonial bg-white p-6 rounded-lg shadow-lg transform transition-all duration-500 text-center min-h-fit w-full ${
         showAll ? "slide-down" : index > 3 ? "hidden" : ""
       }">
         <p class=" text-lg mb-4">" <span class='text-text_title_color text-xl'><i class="fa-solid fa-quote-left"></i></span> ${testimonial.review} <span class='text-text_title_color text-xl'><i class="fa-solid fa-quote-right"></i></span> "</p>
