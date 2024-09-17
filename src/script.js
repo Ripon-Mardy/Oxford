@@ -148,139 +148,113 @@ document.addEventListener('DOMContentLoaded', () => {
   renderFaq()
 })
 
+
+
+
+
 // ======= testimonials section ----
 
-    const testimonials = [
-        {
-          image : './images/client-1.jpg',
-            quote: "My name is Hajar Agagdi, I am from Morocco, I completed diploma level 4 and 5 in Business Management. The leadership team makes this place excellent and I've received excellent support, the staff was helpful and in all a great experience. I learned a lot and continuously received support for my assignments; I had very good feedback from the teachers. I highly recommend City College Oxford",
-            author: "John Doe",
-        },
-        {
-          image : './images/client-1.jpg',
-            quote: "My name is Hajar Agagdi, I am from Morocco, I completed diploma level 4 and 5 in Business Management. The leadership team makes this place excellent and I've received excellent support, the staff was helpful and in all a great experience. I learned a lot and continuously received support for my assignments; I had very good feedback from the teachers. I highly recommend City College Oxford",
-            author: "John Doe",
-        },
-        {
-          image : './images/client-1.jpg',
-            quote: "My name is Hajar Agagdi, I am from Morocco, I completed diploma level 4 and 5 in Business Management. The leadership team makes this place excellent and I've received excellent support, the staff was helpful and in all a great experience. I learned a lot and continuously received support for my assignments; I had very good feedback from the teachers. I highly recommend City College Oxford",
-            author: "John Doe",
-        },
-        {
-          image : './images/client-1.jpg',
-            quote: "My name is Hajar Agagdi, I am from Morocco, I completed diploma level 4 and 5 in Business Management. The leadership team makes this place excellent and I've received excellent support, the staff was helpful and in all a great experience. I learned a lot and continuously received support for my assignments; I had very good feedback from the teachers. I highly recommend City College Oxford",
-            author: "John Doe",
-        },
-        {
-          image : './images/client-1.jpg',
-            quote: "My name is Hajar Agagdi, I am from Morocco, I completed diploma level 4 and 5 in Business Management. The leadership team makes this place excellent and I've received excellent support, the staff was helpful and in all a great experience. I learned a lot and continuously received support for my assignments; I had very good feedback from the teachers. I highly recommend City College Oxford",
-            author: "John Doe",
-        },
-        {
-          image : './images/client-1.jpg',
-            quote: "My name is Hajar Agagdi, I am from Morocco, I completed diploma level 4 and 5 in Business Management. The leadership team makes this place excellent and I've received excellent support, the staff was helpful and in all a great experience. I learned a lot and continuously received support for my assignments; I had very good feedback from the teachers. I highly recommend City College Oxford",
-            author: "John Doe",
-        },
-    ];
 
-    let currentIndex = 0;
-    let itemsPerView = 1; // Default for mobile view
-    let totalSlides = testimonials.length;
-
-    // Update the number of items per view based on the screen size
-    function updateItemsPerView() {
-        const screenWidth = window.innerWidth;
-
-        if (screenWidth >= 1024) {
-            itemsPerView = 2; // Show 2 testimonials on desktop
-        } else {
-            itemsPerView = 1; // Show 1 testimonial on mobile
-        }
-
-        // Adjust slider width after screen size change
-        updateSliderWidth();
+document.addEventListener("DOMContentLoaded", () => {
+  const testimonials = [
+    {
+      name: "John Doe",
+      imge : './images/client-1.jpg',
+      review: "	I really enjoy the time spent learning English at OLC Ajman . I have a lot of help from the teachers and staff and that’s why I referred my friend to this course,	",
+      company: "XYZ Corp."
+    },
+    {
+      name: "Jane Smith",
+      imge : './images/client-1.jpg',
+      review: "Loved the experience. Will definitely come back!",
+      company: "ABC Inc."
+    },
+    {
+      name: "Michael Johnson",
+      imge : './images/client-1.jpg',
+      review: "Top-notch support and service.",
+      company: "DEF Solutions"
+    },
+    {
+      name: "Sarah Brown",
+      imge : './images/client-1.jpg',
+      review: "Professional and friendly. Excellent service.",
+      company: "GHI Industries"
+    },
+    {
+      name: "Emily White",
+      imge : './images/client-1.jpg',
+      review: "Fast and reliable. Great customer support!",
+      company: "JKL Enterprises"
+    },
+    {
+      name: "Tom Davis",
+      imge : './images/client-1.jpg',
+      review: "Very satisfied with the service.",
+      company: "MNO Global"
+    },
+    {
+      name: "Anna Lee",
+      imge : './images/client-1.jpg',
+      review: "Outstanding experience. Highly recommend.",
+      company: "PQR Solutions"
+    },
+    {
+      name: "Chris Taylor",
+      imge : './images/client-1.jpg',
+      review: "Exceptional quality and customer care.",
+      company: "STU Tech"
     }
+  ];
 
-    // Set the width for each testimonial based on the number of visible items
-    function updateSliderWidth() {
-        const sliderItems = document.querySelectorAll('.testimonial-item');
-        sliderItems.forEach(item => {
-            item.style.minWidth = `${100 / itemsPerView}%`; // Dynamically set width
-        });
-    }
+  const testimonialContainer = document.getElementById("testimonial-container");
+  const toggleBtn = document.getElementById("toggle-btn");
 
-    // Render testimonials into the slider
-    function renderTestimonials() {
-        const slider = document.getElementById('testimonial-slider');
-        slider.innerHTML = ''; // Clear previous items
+  let showAll = false;
 
-        testimonials.forEach(testimonial => {
-            const testimonialItem = document.createElement('div');
-            testimonialItem.classList.add('testimonial-item', 'p-6', 'text-center', 'bg-white', 'shadow-md', 'rounded-lg', 'mx-3');
-            testimonialItem.innerHTML = `
-           <div class=" px-5 flex flex-col gap-4">
-            <img src=${testimonial.image} class="rounded-full w-24 mx-auto"  alt="testimonial" />
-                <p class="text-base"> <span class="text-3xl text-text_hover_color"><i class="fa-solid fa-quote-left"></i></span> "${testimonial.quote}" <span class="text-3xl text-text_hover_color"><i class="fa-solid fa-quote-right"></i></span> </p>
-                <div class="flex items-center justify-center gap-1 text-yellow-400">
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                </div>
-                <p class=" font-bold text-xl">${testimonial.author}</p>
-           </div>
-            `;
-            slider.appendChild(testimonialItem);
-        });
+  function displayTestimonials() {
+    // Initially show only 4 testimonials
+    const testimonialsToShow = showAll ? testimonials : testimonials.slice(0, 4);
 
-        updateSliderWidth(); // Adjust width after rendering
-    }
+    testimonialContainer.innerHTML = testimonialsToShow
+      .map(
+        (testimonial, index) => `
+      <div class="testimonial bg-white p-6 rounded-lg shadow-lg w-full transform transition-all duration-500 text-center min-h-fit w-full ${
+        showAll ? "slide-down" : index > 3 ? "hidden" : ""
+      }">
+        <p class=" text-lg mb-4">" <span class='text-text_title_color text-xl'><i class="fa-solid fa-quote-left"></i></span> ${testimonial.review} <span class='text-text_title_color text-xl'><i class="fa-solid fa-quote-right"></i></span> "</p>
+        <img src="${testimonial.imge}" class='w-14 rounded-full mx-auto' alt="client" />
+        <h4 class="text-xl font-semibold">${testimonial.name}</h4>
+        <span class="text-gray-500">${testimonial.company}</span>
+      </div>
+    `
+      )
+      .join("");
+  }
 
-    // Slide testimonials left or right
-    function slideTestimonials() {
-        const slider = document.getElementById('testimonial-slider');
-        const offset = -(currentIndex * (100 / itemsPerView)); // Calculate offset for sliding
-        slider.style.transform = `translateX(${offset}%)`;
-    }
+  function toggleTestimonials() {
+    showAll = !showAll;
+    displayTestimonials();
 
-    // Handle next button click
-    function nextTestimonial() {
-        currentIndex = (currentIndex + 1) % Math.ceil(testimonials.length / itemsPerView); // Move to next slide
-        slideTestimonials();
-    }
+    toggleBtn.innerText = showAll ? "Show Less" : "Show More";
 
-    // Handle previous button click
-    function prevTestimonial() {
-        currentIndex = (currentIndex - 1 + Math.ceil(testimonials.length / itemsPerView)) % Math.ceil(testimonials.length / itemsPerView); // Move to previous slide
-        slideTestimonials();
-    }
-
-    // Initial render and setup
-    renderTestimonials();
-    updateItemsPerView(); // Set initial items per view
-    slideTestimonials();
-
-    // Auto slide every 3 seconds
-    const autoSlide = setInterval(nextTestimonial, 3000);
-
-    // Add click event listeners for manual navigation
-    document.getElementById('nextBtn').addEventListener('click', () => {
-        clearInterval(autoSlide); // Stop auto sliding on manual action
-        nextTestimonial();
+    // Apply animations for testimonials
+    document.querySelectorAll('.testimonial').forEach((testimonial, index) => {
+      if (showAll && index > 3) {
+        testimonial.classList.remove("hidden");
+        testimonial.classList.add("slide-down");
+      } else if (!showAll && index > 3) {
+        testimonial.classList.remove("slide-down");
+        testimonial.classList.add("slide-up");
+        setTimeout(() => {
+          testimonial.classList.add("hidden");
+        }, 500); // Wait for animation to complete before hiding
+      }
     });
+  }
 
-    document.getElementById('prevBtn').addEventListener('click', () => {
-        clearInterval(autoSlide); // Stop auto sliding on manual action
-        prevTestimonial();
-    });
+  toggleBtn.addEventListener("click", toggleTestimonials);
 
-    // Listen for window resize to adjust items per view
-    window.addEventListener('resize', () => {
-        updateItemsPerView(); // Recalculate items per view on resize
-        slideTestimonials();  // Recalculate slide position after resize
-    });
-
-
-
-
+  // Initially display testimonials
+  displayTestimonials();
+});

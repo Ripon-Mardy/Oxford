@@ -461,7 +461,7 @@
 
   <!-- ==== Testimonail =====  -->
   <section class="py-10">
-    <div class="container mx-auto px-3 py-10">
+    <div class="md:w-[90%] container mx-auto px-3 py-10">
       <div class="md:w-1/2 mx-auto flex flex-col items-center justify-center gap-3">
         <h4 class="text-base text-text_hover_color">Testimonial</h4>
         <h1 class="text-3xl md:text-4xl font-semibold text-text_heading_color">What Our Students Said</h1>
@@ -473,19 +473,15 @@
 
       <!-- === testimonial list ===  -->
 
-      <div class="testimonial-container mx-auto w-full p-8">
-        <div class="relative overflow-hidden">
-          <div id="testimonial-slider" class="flex transition-transform duration-700 ease-in-out">
-            <!-- Testimonial items will be dynamically inserted from the JavaScript file -->
-          </div>
-
-          <!-- Next and Previous buttons -->
-          <button id="prevBtn"
-            class="absolute top-1/2 left-2 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full">❮</button>
-          <button id="nextBtn"
-            class="absolute top-1/2 right-2 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full">❯</button>
+    
+        <div id="testimonial-container" class="grid gap-10 md:grid-cols-2 mt-10 "></div>
+        <!-- Show more/less button -->
+        <div class="text-center mt-10">
+          <button id="toggle-btn" class="btn-primary">
+            Show More
+          </button>
         </div>
-      </div>
+
 
 
 
@@ -809,6 +805,12 @@
 
     </div>
   </section>
+
+
+
+
+
+  
 
 
 
