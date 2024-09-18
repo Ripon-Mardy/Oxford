@@ -133,7 +133,7 @@
         </ul>
 
         <!-- Get in Touch Button -->
-        <button class="hidden xl:block bg-top_Header_color text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-hover_color duration-200 ease-in-out">
+        <button id="contactBtn" class="hidden xl:block bg-top_Header_color text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-hover_color duration-200 ease-in-out">
           Get in Touch
         </button>
 
@@ -225,6 +225,60 @@
     </div>
   </section>
 
+  <!-- === popup form ===  -->
+  <div id="popupForm" class="fixed inset-0 hidden  justify-center items-center bg-black bg-opacity-50 z-50 overflow-y-auto">
+    <div class="bg-white w-full max-w-lg p-6 rounded-lg shadow-lg transform transition-all duration-500 scale-95">
+      <div class="flex justify-between items-center mb-4">
+       <img src="./images/OLC-logo-s.png" class="w-1/2 mx-auto" alt="logo">
+        <button id="closeBtn" class="text-gray-800 hover:text-gray-600 focus:outline-none absolute left-5 top-4 text-4xl">&times;</button>
+      </div>
+
+      <form action="#" class="flex flex-col gap-6">
+        <div class="flex flex-col gap-1.5">
+          <label class="font-medium text-sm" for="name">Full Name</label>
+          <input type="text"
+            class="p-2 w-full border border-border_input_color outline-none border-opacity-75 rounded-md" id="name"
+            placeholder="Full Name" required>
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <label class="font-medium text-sm" for="email">Email</label>
+          <input class="p-2 w-full border border-border_input_color outline-none border-opacity-75 rounded-md"
+            type="email" placeholder="Email" required>
+        </div>
+        <div class="flex flex-col gap-5">
+          <div class="flex flex-col gap-1.5">
+            <label class="font-medium text-sm" for="phone">Please Select Date For A call </label>
+            <input class="p-2 w-full border border-border_input_color outline-none border-opacity-75 rounded-md"
+              type="number" placeholder="Phone Number" required>
+          </div>
+          <div>
+            <div class="flex flex-col gap-1.5">
+              <label class="font-medium text-sm" for="information">Request Information About Our</label>
+              <div class="flex gap-4">
+                <div>
+                  <input type="checkbox">
+                  <span>Baku Center</span>
+                </div>
+                <div>
+                  <input type="checkbox">
+                  <span>Marrakesh Center</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div>
+            <label class="font-medium text-sm" for="">Please Select Date For A call </label>
+            <input class="p-2 w-full border border-border_input_color outline-none border-opacity-75 rounded-md"
+              type="date" placeholder="Please select date for a call">
+          </div>
+        </div>
+        <button type="submit" class="btn-primary mx-auto">Request A call From our Team</button>
+      </form>
+    </div>
+  </div>
+   <!-- ==== end popup form ===  -->
+
   <!-- ===== Hero section =====  -->
   <section class="banner_bg h-screen">
     <div
@@ -247,6 +301,7 @@
       </div>
       <div>
         <button
+        id="contactBtn"
           class="bg-top_Header_color p-5 rounded-xl px-10 text-white w-full text-4xl flex gap-5 hover:bg-hover_color duration-200 ease-in-out">Apply
           now <span><i class="fa-solid fa-user-graduate"></i></span> </button>
       </div>

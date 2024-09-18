@@ -258,3 +258,37 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initially display testimonials
   displayTestimonials();
 });
+
+
+// ==== pop up form ==== 
+const contactBtn = document.querySelector('#contactBtn');
+    const popupForm = document.getElementById('popupForm');
+    const closeBtn = document.getElementById('closeBtn');
+    // Open the popup
+    contactBtn.addEventListener('click', () => {
+      popupForm.classList.remove('hidden', 'fade-out');
+      popupForm.classList.add('flex', 'fade-in');
+    });
+
+    // Close the popup
+    closeBtn.addEventListener('click', () => {
+      popupForm.classList.remove('fade-in');
+      popupForm.classList.add('fade-out');
+      setTimeout(() => {
+        popupForm.classList.remove('flex');
+        popupForm.classList.add('hidden');
+      }, 500);
+    });
+
+    // Close popup when clicking outside the form
+    popupForm.addEventListener('click', (event) => {
+      if (event.target === popupForm) {
+        popupForm.classList.remove('fade-in');
+        popupForm.classList.add('fade-out');
+        setTimeout(() => {
+          popupForm.classList.remove('flex');
+          popupForm.classList.add('hidden');
+        }, 500);
+      }
+    });
+// end popup form 
