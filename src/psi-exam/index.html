@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../input.css">
+    <link rel="stylesheet" href="../output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+      <!-- ==== Top header ===  -->
+  <section class="bg-top_Header_color">
+    <div class="container mx-auto px-3 text-white hidden xl:flex items-center justify-between gap-4 py-2">
+      <div class="flex gap-2 items-center">
+        <span class="text-lg"><i class="fa-regular fa-envelope"></i></span>
+        <span class="text-[11px]">Admissions@oxfordlanguagecentre.com</span>
+      </div>
+
+      <div class="flex gap-2 items-center">
+        <span class="text-lg"><i class="fa-brands fa-whatsapp"></i></span>
+        <span class="text-[11px]">00212 6 00600751</span>
+      </div>
+
+      <div class="flex gap-2 items-center">
+        <span class="text-lg"><i class="fa-solid fa-phone"></i></span>
+        <span class="text-[11px]">00212 6 00600751</span>
+      </div>
+
+      <div class="flex gap-2 items-center">
+        <span class="text-lg"><i class="fa-regular fa-envelope"></i></span>
+        <span class="text-[11px]">Baku@oxfordlanguagecentre.com</span>
+      </div>
+
+      <div class="flex gap-2 items-center">
+        <span class="text-lg"><i class="fa-brands fa-whatsapp"></i></span>
+        <span class="text-[11px]">0099 45 54 136 866</span>
+      </div>
+
+      <div class="flex gap-2 items-center">
+        <span class="text-lg"><i class="fa-solid fa-phone"></i></span>
+        <span class="text-[11px]">0099 45 54 136 866</span>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- ====== navbar section ====  -->
+    <section class="py-2">
+        <div>
+          <!-- Navbar -->
+          <nav id="navbar" class="container mx-auto px-4 flex justify-between items-center z-50 bg-white">
+            <!-- Logo -->
+            <div class="text-white text-2xl font-bold">
+              <a href="#">
+                <img class="w-32 md:w-36" src="../images/OLC-logo-s.png" alt="" />
+              </a>
+            </div>
+    
+            <!-- Navigation Menu -->
+            <ul class="hidden xl:flex space-x-8 items-center">
+              <li class="group relative py-2 z-30">
+                <a href="#"
+                  class="overflow-hidden flex items-center gap-2 font-semibold py-1 px-2 hover:text-text_hover_color duration-100 ease-in-out text-sm">English
+                  Courses
+                  <span><i class="fa-solid fa-caret-down"></i></span>
+                </a>
+                <!-- Dropdown -->
+                <ul
+                  class="absolute left-0 top-10 hidden group-hover:block space-y-2 bg-white rounded-bl-md rounded-br-md shadow-lg overflow-hidden w-40 -z-10 border-t-2 border-t-border_bottom_color text-sm">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-top_Header_color hover:text-white">General English</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-top_Header_color hover:text-white">IELTS Preparation</a>
+                  </li>
+                  <li></li>
+                  <a href="#" class="block px-4 py-2 hover:bg-top_Header_color hover:text-white">PSI SfE Preparation</a>
+              </li>
+            </ul>
+            </li>
+    
+            <li class="group relative py-2 z-30">
+              <a href="./British-Diplomas/"
+                class="overflow-hidden font-semibold text-sm py-1 px-2 hover:text-text_hover_color duration-100 ease-in-out">British
+                Diplomas
+              </a>
+            </li>
+    
+            <li class="group relative py-2 z-30">
+              <a href="./our-services/"
+                class="overflow-hidden font-semibold text-sm hover:text-text_hover_color duration-100 ease-in-out py-1 px-2">Our
+                Services
+              </a>
+            </li>
+    
+            <li class="group relative py-2 z-30">
+              <a href="#"
+                class="overflow-hidden font-semibold text-sm hover:text-text_hover_color duration-100 ease-in-out py-1 px-2">PSI
+                Test at OLC
+              </a>
+            </li>
+            <li class="group relative py-2 z-30">
+              <a href="./psi-exam/"
+                class="overflow-hidden flex items-center gap-2 font-semibold text-sm py-1 px-2 hover:text-text_hover_color duration-100 ease-in-out">About
+                OLC
+                <span><i class="fa-solid fa-caret-down"></i></span>
+              </a>
+              <!-- Dropdown -->
+              <ul
+                class="absolute left-0 top-10 hidden space-y-2 group-hover:block bg-white rounded-bl-md rounded-br-md shadow-lg overflow-hidden w-40 -z-10 border-t-2 border-t-border_bottom_color text-sm">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-top_Header_color hover:text-white">About Us</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-top_Header_color hover:text-white">Our Accreditation</a>
+                </li>
+                <li></li>
+                <a href="#" class="block px-4 py-2 hover:bg-top_Header_color hover:text-white">OLC Gallery</a>
+            </li>
+            </ul>
+            </li>
+            <li class="group relative py-2">
+              <a href="#"
+                class="overflow-hidden font-medium hover:text-text_hover_color duration-100 ease-in-out py-1 px-2">Blog
+              </a>
+            </li>
+            </ul>
+    
+            <!-- Get in Touch Button -->
+            <button id="contactBtn" class="hidden xl:block bg-top_Header_color text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-hover_color duration-200 ease-in-out">
+              Get in Touch
+            </button>
+    
+            <!-- Mobile Menu Icon -->
+            <div
+              class="xl:hidden text-2xl border border-border_bottom_color border-opacity-75 p-2 py-0 rounded-md cursor-pointer"
+              id="menu-toggle">
+              &#9776;
+            </div>
+          </nav>
+    
+          <!-- Mobile Menu -->
+          <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-0 bg-white overflow-hidden transition-all duration-300 z-50">
+            <div class="p-4 flex justify-end">
+              <button id="close-menu"
+                class="text-3xl border border-border_bottom_color p-2 py-0 cursor-pointer rounded-md border-opacity-75">
+                &times;
+              </button>
+            </div>
+            <ul class="space-y-5 text-center mt-10 z-50">
+              <!-- Mobile Dropdown Menu 1 -->
+              <li>
+                <button id="mobile-menu-1"
+                  class="w-full text-left block px-4 py-2 text-sm font-semibold hover:bg-top_Header_color hover:text-white">
+                  English Courses
+                  <span><i class="fa-solid fa-caret-down"></i></span>
+                </button>
+                <ul id="mobile-dropdown-1" class="hidden text-left bg-gray-50 py-1">
+                  <li>
+                    <a href="#" class="block py-2 hover:bg-top_Header_color pl-2 text-sm hover:text-white">General
+                      English</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 hover:bg-top_Header_color pl-2 text-sm hover:text-white">IELTS
+                      Preparation</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 hover:bg-top_Header_color pl-2 text-sm hover:text-white">PSI SfE
+                      Preparation</a>
+                  </li>
+                </ul>
+              </li>
+    
+              <li>
+                <button id="mobile-menu-1"
+                  class="w-full text-left block px-4 py-2 text-sm font-semibold hover:bg-top_Header_color hover:text-white">
+                  British Diplomas
+                </button>
+              </li>
+              <li>
+                <button id="mobile-menu-1"
+                  class="w-full text-left block px-4 py-2 text-sm font-semibold hover:bg-top_Header_color hover:text-white">
+                  Our Services
+                </button>
+              </li>
+              <li>
+                <button id="mobile-menu-1"
+                  class="w-full text-left block px-4 py-2 text-sm font-semibold hover:bg-top_Header_color hover:text-white">
+                  PSI Test at OLC
+                </button>
+              </li>
+              <div>
+                <button id="mobile-menu-2"
+                  class="w-full text-left block px-4 py-2 text-sm font-semibold hover:bg-top_Header_color hover:text-white">
+                  About OLC <span><i class="fa-solid fa-caret-down"></i></span>
+                </button>
+                <div id="mobile-dropdown-2" class="hidden text-left">
+                  <a href="#" class="block py-2 hover:bg-top_Header_color pl-4 text-sm hover:text-white">About Us</a>
+                  <a href="#" class="block py-2 hover:bg-top_Header_color pl-4 text-sm hover:text-white">Our
+                    Accreditation</a>
+                  <a href="#" class="block py-2 hover:bg-top_Header_color pl-4 text-sm hover:text-white">OLC Gallery</a>
+                </div>
+              </div>
+              <li>
+                <button id="mobile-menu-1"
+                  class="w-full text-left block px-4 py-2 text-sm font-semibold hover:bg-top_Header_color hover:text-white">
+                  Blog
+                </button>
+              </li>
+              <li>
+                <!-- Get in Touch Button -->
+                <button class="hidden md:block bg-top_Header_color text-white px-6 py-2 rounded-lg">
+                  Get in Touch
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    
+      <!-- === popup form ===  -->
+      <div id="popupForm" class="fixed inset-0 hidden  justify-center items-center bg-black bg-opacity-50 z-50 overflow-y-auto">
+        <div class="bg-white w-full max-w-lg p-6 rounded-lg shadow-lg transform transition-all duration-500 scale-95">
+          <div class="flex justify-between items-center mb-4">
+           <img src="../images/OLC-logo-s.png" class="w-1/2 mx-auto" alt="logo">
+            <button id="closeBtn" class="text-gray-800 hover:text-gray-600 focus:outline-none absolute left-5 top-4 text-4xl">&times;</button>
+          </div>
+    
+          <form action="#" class="flex flex-col gap-6">
+            <div class="flex flex-col gap-1.5">
+              <label class="font-medium text-sm" for="name">Full Name</label>
+              <input type="text"
+                class="p-2 w-full border border-border_input_color outline-none border-opacity-75 rounded-md" id="name"
+                placeholder="Full Name" required>
+            </div>
+            <div class="flex flex-col gap-1.5">
+              <label class="font-medium text-sm" for="email">Email</label>
+              <input class="p-2 w-full border border-border_input_color outline-none border-opacity-75 rounded-md"
+                type="email" placeholder="Email" required>
+            </div>
+            <div class="flex flex-col gap-5">
+              <div class="flex flex-col gap-1.5">
+                <label class="font-medium text-sm" for="phone">Please Select Date For A call </label>
+                <input class="p-2 w-full border border-border_input_color outline-none border-opacity-75 rounded-md"
+                  type="number" placeholder="Phone Number" required>
+              </div>
+              <div>
+                <div class="flex flex-col gap-1.5">
+                  <label class="font-medium text-sm" for="information">Request Information About Our</label>
+                  <div class="flex gap-4">
+                    <div>
+                      <input type="checkbox">
+                      <span>Baku Center</span>
+                    </div>
+                    <div>
+                      <input type="checkbox">
+                      <span>Marrakesh Center</span>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+              <div>
+                <label class="font-medium text-sm" for="">Please Select Date For A call </label>
+                <input class="p-2 w-full border border-border_input_color outline-none border-opacity-75 rounded-md"
+                  type="date" placeholder="Please select date for a call">
+              </div>
+            </div>
+            <button type="submit" class="btn-primary mx-auto">Request A call From our Team</button>
+          </form>
+        </div>
+      </div>
+       <!-- ==== end popup form ===  -->
+
+<!-- ===== psi exam ====  -->
+ <section class="py-10">
+    <div class="md:w-[90%] container mx-auto px-3">
+       <div class="grid md:grid-cols-2 gap-10">
+        <div class="flex flex-col gap-7">
+            <video src="../images/file.mp4" autoplay muted loop controls></video>
+            <div class="flex flex-col xl:flex-row items-center justify-center shadow-xl rounded-md overflow-hidden">
+                <div class="bg-top_Header_color p-5 md:p-8 text-white flex-col flex  gap-5">
+                    <h1 class="text-3xl font-semibold">Designed For You</h1>
+                    <p>You’ve worked hard to develop your English language skills, booking and taking the test should be simple</p>
+                </div>
+                <div class="p-5 md:p-8 flex flex-col gap-5">
+                    <h1 class="text-3xl font-semibold">Convenient</h1>
+                    <p>More choice of location, more choice of test dates for exam events and on-demand</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-7">
+            <h6 class="text-base text-text_title_color font-semibold">PSI Test at OLC</h6>
+            <img src="../images/Skills-for-English-Trademark-RGB.webp" class="w-1/2" alt="skills">
+            <h1 class="text-3xl md:text-4xl font-bold text-text_title_color">UKVI Approved English Proficiency Language Test</h1>
+            <p>UKVI Approved English Proficiency Language Test – Simple, Quick, Affordable <br> Skills For English is now available in 95 countries around the world, and Morocco is one of them.</p>
+            <button class="btn-primary">Book Your Test Now</button>
+        </div>
+       </div>
+    </div>
+ </section>
+
+
+ <!-- ====== Why Skills for English? ===  -->
+  <section class="py-10">
+    <div class="md:w-[90%] container mx-auto px-3">
+       <div class="flex flex-col gap-2">
+        <h1 class="text-text_title_color text-2xl font-semibold">Why Skills for English?</h1>
+        <p class="text-base">Skills for English is a qualification that enables you to demonstrate your knowledge of the English language for many purposes, including work, study, or settlement. With Skills for English, you get: </p>
+       </div>
+
+       <ul class='mt-4 list-disc flex flex-col gap-3 text-base p-4'>
+        <li>A degree that has been verified by the Scottish Credentials Authority (SQA), a global innovator in the establishment of credentials. </li>
+        <li>A clear path for rapid progress toward your goal, with practical support, study aids, and practice tests </li>
+        <li>A variety of test levels to match your needs precisely, with the outcome based on a simple pass-mark </li>
+       </ul>
+       <ul class="mt-10 list-disc flex flex-col gap-3 p-4">
+        <li>Simple on-demand booking and a choice of delivery channels and locations </li>
+        <li>A one-session test that is entirely computer-based with no examiner/assessor present </li>
+        <li>Auto-marked reading and listening skills, with speaking and writing components marked by expert assessors who do not see any of your details </li>
+        <li>A quick turn-around on marking with results being available in as little as 14 days </li>
+       </ul>
+
+       <div class="mt-10">
+       <div class="flex flex-col gap-3">
+        <h1 class="text-2xl font-semibold text-text_title_color">Levels tailored to your needs</h1>
+        <p>Skills for English provides an accurate measure of language proficiency through practical and realistic tasks which you would expect to undertake in an English-speaking environment. </p>
+       </div>
+        <ul class="list-disc mt-5 p-4">
+            <li>You get to choose the test level you require, from beginner to proficiency, for either two skills, speaking and listening, or four skills, speaking, listening, reading, and writing. That way, you know you are preparing for and taking precisely the level of test you need for your chosen purpose – no more, no less. </li>
+        </ul>
+        <img src="../images/21-768x335.webp" class="w-2/3 my-5 mx-auto" alt="21">
+       </div>
+
+       <div class="flex flex-col gap-3 py-5">
+        <h1 class="text-2xl text-text_title_color font-semibold">Computer-based testing for all skills</h1>
+        <p>All Skills for English tests use computer-based delivery for all skills. Reading and listening are automatically marked during the test session itself; speaking and writing are recorded digitally during the test session and marked by trained assessors (who have no visibility of your details) after you’ve finished. It follows that you can test all the components in succession in a single session and get your results in as little as 14 days. </p>
+       </div>
+
+       <div class="grid md:grid-cols-2 gap-10 py-5">
+       <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-2">
+            <h1 class="text-text_title_color font-semibold text-2xl">Speaking</h1>
+            <p>First, you have to introduce yourself. Then you will listen to a series of recordings and respond to recorded questions and tasks that will be manifested on the screen. You will do this by registering your spoken answers. </p>
+        </div>
+        <div class="flex flex-col gap-2">
+            <h1 class="text-text_title_color font-semibold text-2xl">Reading</h1>
+            <p>The student will see a series of texts of varying lengths on screen. Then they will be asked multiple questions about them in different formats. These include multiple-choice, true/false/not given, answer matching, or written responses. </p>
+        </div>
+       </div>
+       <div class="flex flex-col gap-6">
+        <div  class="flex flex-col gap-2">
+            <h1 class="text-text_title_color font-semibold text-2xl">Listening</h1>
+            <p>The student will listen to several recordings of spoken English. These will feature one or more speakers. After each, the student should answer a series of multiple-choice or short-word-answer questions. </p>
+        </div>
+        <div class="flex flex-col gap-6">
+            <h1 class="text-text_title_color font-semibold text-2xl">Writing</h1>
+            <p>The examiner will give the candidate two tasks, which may be on any relevant topic. Thus, they have to organize and complete an extended written response for each part. The candidate has to address the task and include the main keywords of the topic. </p>
+        </div>
+       </div>
+    </div>
+    <p class="my-4">When you receive your results, you will be given details of the individual outcome (pass/fail) for each skill taken, plus your overall test outcome (also pass/fail): you need to pass each of the skills taken to pass the test overall.</p>
+
+    <div class="flex flex-col gap-3 py-5">
+        <h1 class="text-2xl font-semibold text-text_title_color">Simple to take, simple to book</h1>
+        <p>Skills for English language tests can be taken at one of our worldwide networks of PSI Authorized Test Centres, you can book on-demand all year round and take the test at a time and place that’s convenient to you. </p>
+    </div>
+
+    <div class="flex flex-col gap-3 py-5">
+        <h1 class="text-2xl font-semibold text-text_title_color">Assured by SQA, powered by PSI</h1>
+        <div class="flex flex-col gap-4">
+            <p>Skills for English is the creation of two of the leading names in qualification and certification. </p>
+            <p>The Scottish Qualifications Authority (SQA) is an international leader in education and qualifications development. PSI Services is a global workforce solutions provider with over 70 years of experience providing worldwide high-stakes testing. 
+            </p>
+            <p>SQA would like to thank the European Centre for Modern Languages of the Council of Europe for providing expertise for standard-setting activities during the development of Skills for English tests. You can learn more about the Council for Europe here. 
+            </p>
+        </div>
+    </div>
+
+
+    <div class="flex flex-col gap-3 py-5">
+        <h1>UKVI SELT Exam: SKILLS FOR ENGLISH</h1>
+        <div class="flex flex-col gap-4 mt-4">
+            <h1 class="text-2xl font-semibold text-text_title_color">Introduction</h1>
+            <p>Skills for English is a Secure English Language Test (SELT). The UK Home Office for UK Visas and Immigration requires a pass in Skills for English to demonstrate your English language skills for your visa application. It is a computer-based exam since the student can take it at the Institute of Career Development, which is authorized by the  PSI Test Centre in Morocco. </p>
+            <p>Skills for English UKVI is equivalent to IELTS (UKVI) and objectively assesses test takers’ English language proficiency in four facets; listening, speaking, reading, and writing. The UK home office approves the exam Skills for English UKVI. Thus, one can use this exam to apply for a UK visa for study, work, and immigration. 
+            </p>
+            <p>Skills for English UKVI adopts a Pass/No Pass scoring method. Applicants have to pass each part of the test to achieve the final test score. In the past, applicants may have needed to take IELTS multiple times to obtain a high enough passing grade. By taking Skills for English UKVI, test takers only need to get a “Pass” result, which saves time and money during the visa application process. 
+            </p>
+        </div>
+    </div>
+
+
+    <div class="py-5 flex flex-col gap-4">
+        <h1 class="text-2xl text-text_title_color gap-4 font-semibold">Why Skills for English? </h1>
+        <p>Skills for English is a qualification that enables you to demonstrate your knowledge of the English language for many reasons, including work, study, or settlement. With Skills for English, you get: </p>
+        <ul class="list-disc p-4 flex flex-col gap-2">
+            <li>The candidate will get a qualification guaranteed by the Scottish Qualifications Authority (SQA). It is a global leader in education and qualification development. </li>
+            <li>The candidate will be given a variety of exam levels to best suit his demands. </li>
+        </ul>
+        <ul class="list-disc p-4 flex flex-col gap-3 mt-3">
+            <li>A clear path for rapid progress toward your goal, with practical support, study aids, and practice tests </li>
+            <li>A one-session test. It is an entirely computer-based test, with no examiner/assessor present. </li>
+            <li>Auto-marked reading and listening skills, with speaking and writing components marked by expert assessors who do not see any of your details        </li>
+            <li>Marking is completed quickly, with findings available in as little as 3 to 5 days. 
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div class="flex flex-col gap-3">
+        <h1 class="text-2xl text-text_title_color font-semibold">Skills for English Exam Components:</h1>
+        <p >The tests provide evidence of English language proficiency for many purposes, including work, study, and travel. </p>
+        <p>At levels A1, A2, and B1 (2 components: Speaking and Listening), test-takers demonstrate their ability to communicate verbally, respond to questions about themselves, and show their understanding of spoken English. The skills assessed include (but are not limited to):         </p>
+        <ul class="mt-4 list-disc flex flex-col gap-3 p-4">
+            <li>responding to questions about themselves and their everyday context 
+            </li>
+            <li>engaging in functional and situational oral activities, such as giving an invitation 
+            </li>
+            <li>listening to a series of short texts and answering questions on what they hear </li>
+        </ul>
+        <p class="py-4">At levels B1, B2, C1, and C2 (4 components: Speaking, Listening, Reading, and Writing), test-takers demonstrate their ability to deal with more challenging contexts across all four skills. The skills assessed include (but are not limited to): </p>
+        <ul class="list-disc p-4 flex flex-col gap-3">
+            <li>proficiency at relevant CEFR levels in writing, reading, listening, and speaking skills in English 
+            </li>
+            <li>understanding written and spoken texts in English in the context of everyday life 
+            </li>
+            <li>producing written English in the context of everyday life 
+            </li>
+            <li>applying knowledge and understanding of language in spoken and written English 
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+         <!-- === footer section ====  -->
+  <section class="py-10 bg-top_Header_color text-white">
+    <div class="container mx-auto px-3">
+
+<div class="md:w-[90%] mx-auto">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-14 text-gray-200">
+    <div>
+      <h1 class="text-xl md:text-2xl font-semibold mb-3">ABOUT OLC</h1>
+      <ul class="flex flex-col gap-3 text-base font-normal">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Accreditation</a></li>
+        <li><a href="#">OLC Gallery</a></li>
+        <li><a href="#">News & Events</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h1 class="text-xl md:text-2xl font-semibold mb-3">OUR COURSES</h1>
+      <ul class="flex flex-col gap-3 text-base font-normal">
+        <li><a href="#">English Courses</a></li>
+        <li><a href="#">British Diplomas</a></li>
+        <li><a href="#">PSI TEST AT OLC</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h1 class="text-xl md:text-2xl font-semibold mb-3">HELP CENTER</h1>
+      <ul class="flex flex-col gap-3 text-base font-normal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Cookies Policy</a></li>
+      </ul>
+    </div>
+
+
+    <div class="flex flex-col items-start gap-3">
+      <span>Subscribe to our newsletter and stay informed.</span>
+      <input type="email" class="rounded-xl bg-white p-2 w-full text-sm" placeholder="Email">
+      <button class="bg-white text-text_title_color text-sm font-semibold p-2 px-5 rounded-xl">subscribe</button>
+    </div>
+  </div>
+
+  <p class="text-center text-base text-gray-200 mt-10">Copyright ©2024 All rights reserved | Oxford Language Centre
+  </p>
+</div>
+
+    </div>
+  </section>
+
+
+    
+
+
+    <script src="../script.js"></script>
+</body>
+</html>

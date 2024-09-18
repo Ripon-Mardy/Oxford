@@ -219,10 +219,10 @@ document.addEventListener("DOMContentLoaded", () => {
     testimonialContainer.innerHTML = testimonialsToShow
       .map(
         (testimonial, index) => `
-      <div class="testimonial bg-white p-6 rounded-lg shadow-lg transform transition-all duration-500 text-center min-h-fit w-full ${
+      <div class="testimonial bg-white p-6 rounded-lg shadow-lg transform transition-all duration-500 text-center min-h-fit w-full flex flex-col gap-3 ${
         showAll ? "slide-down" : index > 3 ? "hidden" : ""
       }">
-        <p class=" text-lg mb-4">" <span class='text-text_title_color text-xl'><i class="fa-solid fa-quote-left"></i></span> ${testimonial.review} <span class='text-text_title_color text-xl'><i class="fa-solid fa-quote-right"></i></span> "</p>
+        <p class=" text-lg">" <span class='text-text_title_color text-xl'><i class="fa-solid fa-quote-left"></i></span> ${testimonial.review} <span class='text-text_title_color text-xl'><i class="fa-solid fa-quote-right"></i></span> "</p>
         <img src="${testimonial.imge}" class='w-14 rounded-full mx-auto' alt="client" />
         <h4 class="text-xl font-semibold">${testimonial.name}</h4>
         <span class="text-gray-500">${testimonial.company}</span>
@@ -261,14 +261,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // ==== pop up form ==== 
-const contactBtn = document.querySelector('#contactBtn');
+const contactBtn = document.querySelectorAll('#contactBtn')
     const popupForm = document.getElementById('popupForm');
     const closeBtn = document.getElementById('closeBtn');
-    // Open the popup
-    contactBtn.addEventListener('click', () => {
-      popupForm.classList.remove('hidden', 'fade-out');
-      popupForm.classList.add('flex', 'fade-in');
-    });
+
+    contactBtn.forEach(btn => {
+      btn.addEventListener('click', () => {
+        popupForm.classList.remove('hidden', 'fade-out');
+        popupForm.classList.add('flex', 'fade-in');
+      });
+    })
 
     // Close the popup
     closeBtn.addEventListener('click', () => {
