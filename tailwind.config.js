@@ -38,7 +38,8 @@ module.exports = {
       textColor: {
         "text_hover_color" : "#006A6C",
         "text_title_color" : "#006A6C",
-        "text_heading_color" : "#7A7A7A"
+        "text_heading_color" : "#7A7A7A",
+        "para_color" : "#49535B"
       },
       
     },

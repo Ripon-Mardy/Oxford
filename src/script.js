@@ -294,3 +294,32 @@ const contactBtn = document.querySelectorAll('#contactBtn')
       }
     });
 // end popup form 
+
+
+// ===== Team ==== 
+
+const teams = [
+  {
+    image : './images/team/t1.jpeg',
+    name : "Tareq Basha",
+    title : "Marketing Manager"
+  }
+]
+
+const teamList = document.querySelector('#team_list');
+
+function allTeam(teams) {
+  const teamDiv = document.createElement('div')
+
+  teams.map((list) => {
+    teamDiv.innerHTML = `
+    <img src="${list.image}" alt="" />
+    `
+  });
+  teamList.appendChild(teamDiv)
+}
+
+allTeam(teams)
+
+
+// ==== end team ==== 
