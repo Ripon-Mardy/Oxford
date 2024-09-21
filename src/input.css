@@ -142,3 +142,9 @@
   background-color: rgba(0, 0, 0, 0.541);
   z-index: -1;
 }
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
