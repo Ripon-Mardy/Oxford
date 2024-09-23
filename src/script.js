@@ -10,7 +10,8 @@ window.addEventListener("scroll", function () {
       "left-0",
       "right-0",
       "shadow-md",
-      "z-50"
+      "z-50",
+      "w-full"
     );
   } else {
     navbar.classList.remove(
@@ -19,7 +20,8 @@ window.addEventListener("scroll", function () {
       "left-0",
       "right-0",
       "shadow-md",
-      "z-50"
+      "z-50",
+      "w-full"
     );
   }
 });
@@ -162,116 +164,6 @@ document.addEventListener("DOMContentLoaded", () => {
   renderFaq();
 });
 
-// ======= testimonials section ----
-
-document.addEventListener("DOMContentLoaded", () => {
-  const testimonials = [
-    {
-      name: "John Doe",
-      imge: "./images/client-1.jpg",
-      review:
-        "	I really enjoy the time spent learning English at OLC Ajman . I have a lot of help from the teachers and staff and that’s why I referred my friend to this course,	",
-      company: "XYZ Corp.",
-    },
-    {
-      name: "Jane Smith",
-      imge: "./images/client-1.jpg",
-      review: "Loved the experience. Will definitely come back!",
-      company: "ABC Inc.",
-    },
-    {
-      name: "Michael Johnson",
-      imge: "./images/client-1.jpg",
-      review: "Top-notch support and service.",
-      company: "DEF Solutions",
-    },
-    {
-      name: "Sarah Brown",
-      imge: "./images/client-1.jpg",
-      review: "Professional and friendly. Excellent service.",
-      company: "GHI Industries",
-    },
-    {
-      name: "Emily White",
-      imge: "./images/client-1.jpg",
-      review: "Fast and reliable. Great customer support!",
-      company: "JKL Enterprises",
-    },
-    {
-      name: "Tom Davis",
-      imge: "./images/client-1.jpg",
-      review: "Very satisfied with the service.",
-      company: "MNO Global",
-    },
-    {
-      name: "Anna Lee",
-      imge: "./images/client-1.jpg",
-      review: "Outstanding experience. Highly recommend.",
-      company: "PQR Solutions",
-    },
-    {
-      name: "Chris Taylor",
-      imge: "./images/client-1.jpg",
-      review: "Exceptional quality and customer care.",
-      company: "STU Tech",
-    },
-  ];
-
-  const testimonialContainer = document.getElementById("testimonial-container");
-  const toggleBtn = document.getElementById("toggle-btn");
-
-  let showAll = false;
-
-  function displayTestimonials() {
-    // Initially show only 4 testimonials
-    const testimonialsToShow = showAll
-      ? testimonials
-      : testimonials.slice(0, 4);
-
-    testimonialContainer.innerHTML = testimonialsToShow
-      .map(
-        (testimonial, index) => `
-      <div class="testimonial bg-white p-6 rounded-lg shadow-lg transform transition-all duration-500 text-center min-h-fit w-full flex flex-col gap-3 ${showAll ? "slide-down" : index > 3 ? "hidden" : ""
-          }">
-        <p class=" text-lg">" <span class='text-text_title_color text-xl'><i class="fa-solid fa-quote-left"></i></span> ${testimonial.review
-          } <span class='text-text_title_color text-xl'><i class="fa-solid fa-quote-right"></i></span> "</p>
-        <img src="${testimonial.imge
-          }" class='w-14 rounded-full mx-auto' alt="client" />
-        <h4 class="text-xl font-semibold">${testimonial.name}</h4>
-        <span class="text-gray-500">${testimonial.company}</span>
-      </div>
-    `
-      )
-      .join("");
-  }
-
-  function toggleTestimonials() {
-    showAll = !showAll;
-    displayTestimonials();
-
-    toggleBtn.innerText = showAll ? "Show Less" : "Show More";
-
-    // Apply animations for testimonials
-    document.querySelectorAll(".testimonial").forEach((testimonial, index) => {
-      if (showAll && index > 3) {
-        testimonial.classList.remove("hidden");
-        testimonial.classList.add("slide-down");
-      } else if (!showAll && index > 3) {
-        testimonial.classList.remove("slide-down");
-        testimonial.classList.add("slide-up");
-        setTimeout(() => {
-          testimonial.classList.add("hidden");
-        }, 500); // Wait for animation to complete before hiding
-      }
-    });
-  }
-
-  toggleBtn.addEventListener("click", toggleTestimonials);
-
-  // Initially display testimonials
-  displayTestimonials();
-});
-
 // ==== pop up form ====
 const contactBtn = document.querySelectorAll("#contactBtn");
 const popupForm = document.getElementById("popupForm");
@@ -330,3 +222,7 @@ function AccreditationsImages() {
 }
 
 AccreditationsImages()
+
+
+
+//  ==== testimonial section ==== 
