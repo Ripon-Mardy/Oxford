@@ -36,8 +36,8 @@ module.exports = {
       //   "9xl": "8rem", // 128px
       // },
       backgroundColor: {
-        top_Header_color: "#f39c12",
-        "hover_color" : "#f1c40f",
+        top_Header_color: "#f47a1f",
+        "hover_color" : "#F2700E",
         "button_secondary" : "#61CE70"
       },
       borderColor : {
@@ -46,9 +46,9 @@ module.exports = {
       },
       textColor: {
         "text_hover_color" : "#f1c40f",
-        "text_title_color" : "#006A6C",
+        "text_title_color" : "#f47a1f",
         "text_heading_color" : "#7A7A7A",
-        "para_color" : "#49535B"
+        "para_color" : "#333"
       },
       
     },

@@ -8,6 +8,10 @@
     font-family: "Roboto", system-ui;;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .btn-primary {
   @apply bg-top_Header_color p-3 font-medium w-fit rounded-md text-white px-8 text-sm hover:bg-hover_color duration-200 ease-in-out
 }
