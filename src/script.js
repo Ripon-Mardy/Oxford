@@ -225,13 +225,9 @@ AccreditationsImages()
 
 
 
-//  ==== testimonial section ==== 
 
 
 
 
 
-
-
-
-
+flatpickr("input[type=datetime-local]", {});
